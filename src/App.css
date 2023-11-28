@@ -1,0 +1,91 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+ font-size: 1.25vw;
+ background-color: #fafafa;
+}
+
+#root{
+  overflow-x: hidden;
+}
+
+.circle1{
+  width: 100em;
+  /* background-color: rgb(32 192 247); */
+  position: absolute;
+  top: -38em;
+  left: -32em;
+  z-index: -1;
+  border-radius: 100%;
+}
+
+.circle2{
+  width: 40em;
+  height: 50em;
+  /* background-image: linear-gradient(to right, rgb(9 104 253), rgb(199 150 224)); */
+  border-radius: 45%;
+  position: absolute;
+  z-index: -1;
+  right: -30em;
+  bottom: -20em;
+}
+
+.ant-btn-primary{
+  background-color: #1677ff !important;
+}
+
+@media screen and (max-width: 1279px){
+  .circle1{
+    width: 100em;
+    /* background-color: rgb(32 192 247); */
+    position: absolute;
+    top: -38em;
+    left: -28em;
+    z-index: -1;
+    border-radius: 100%;
+  }
+}
+
+@media screen and (max-width: 767px){
+  body {
+      font-size: 2.8169vw;
+  }
+  .circle1{
+    width: 50em;
+    position: absolute;
+    top: -25em;
+    left: -20em;
+    z-index: -1;
+    border-radius: 100%;
+    max-width: none;
+  }
+}
+
+@media screen and (max-width: 479px){
+  body {
+      font-size: 4.26667vw;
+  }
+  .circle1{
+    width: 50em;
+    position: absolute;
+    top: -28em;
+    left: -20em;
+    z-index: -1;
+    border-radius: 100%;
+    max-width: none;
+  }
+}
+
+/* Max Font Size */
+@media screen and (min-width:1280px) {
+ body {font-size: 16px;}
+}
+/* Container Max Width */
+.container {
+  width: 90%;
+  max-width: 1280px;
+  margin: 0 auto;
+}
+
